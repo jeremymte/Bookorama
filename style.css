@@ -103,7 +103,7 @@ h1, h2{
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     width: 100px;
-    float: left;
+    /* float: left; */
     margin: 20px 0;
     border-left: 0;
     color: white;
