@@ -1,9 +1,21 @@
-var bookList = document.querySelector('#book-list');
+var btns = document.querySelectorAll('#book-list .delete');
 
-console.log('book-list next sibling is:', bookList.nextSibling);
-console.log('book-list next element sibling is:', bookList.nextElementSibling);
+Array.from(btns).forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
 
-console.log('book-list previous sibling is:', bookList.previousSibling);
-console.log('book-list previous element sibling is:', bookList.previousElementSibling);
+        const li = e.target.parentElement;
 
+<<<<<<< HEAD
 bookList.previousElementSibling.querySelector('p').innerHTML += '</br>Too cool for everyone else!'
+=======
+        li.parentNode.removeChild(li)
+    });
+});
+
+var link = document.querySelector('#page-banner a');
+
+link.addEventListener('click', function(e){
+    e.preventDefault();
+    console.log('navigation to',e.target.textContent, ' was prevented');
+})
+>>>>>>> v09.0-Events
